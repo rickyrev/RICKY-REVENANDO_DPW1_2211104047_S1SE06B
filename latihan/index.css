@@ -1,0 +1,324 @@
+:root {
+  --color-lightest: #b5b2f8;
+  --color-light: #6a64f1;
+  --color-medium: #5f5ad9;
+  --color-dark: #4a46a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  color: #495057;
+  /* padding: 2rem; */
+}
+
+/*//////////////////// */
+/* HEADER */
+/*//////////////////// */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  margin: 0 4.8rem;
+}
+
+nav ul {
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.4em;
+  list-style: none;
+}
+
+.logo {
+  font-size: 2.4rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-dark);
+}
+
+.nav-cta:link,
+.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: white;
+  background-color: var(--color-medium);
+}
+
+.nav-cta:hover,
+.nav-cta:active {
+  background-color: var(--color-dark);
+}
+
+/*//////////////////// */
+/* FORMULIR */
+/*//////////////////// */
+
+main {
+  margin: 0 40px;
+  padding: 2.4rem 6.4rem;
+  margin-bottom: 4.8rem;
+  position: relative;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9rem;
+  margin-bottom: 3.2rem;
+}
+
+label {
+  color: #07074d;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  border: 1px solid #dde3ec;
+  border-radius: 5px;
+  color: #536387;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s;
+  padding: 1.2rem 2.4rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--color-dark);
+}
+
+select {
+  border: 1px solid #dde3ec;
+  border-radius: 5px;
+  color: #536387;
+  font-size: 1.6rem;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s;
+  padding: 1.2rem 2.4rem;
+  width: 100%;
+}
+
+.radio-section {
+  display: flex;
+  gap: 4.8rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+
+  gap: 1.2rem;
+}
+
+.label-radio,
+.label-checkbox {
+  display: inline-block;
+  margin-top: 0.5em;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+input[type="radio"] {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 0.5rem;
+  accent-color: var(--color-dark);
+}
+
+input[type="checkbox"] {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 0.5rem;
+  accent-color: var(--color-dark);
+  border-radius: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn-full {
+  background-color: var(--color-dark);
+  color: white;
+  border: none;
+}
+
+.btn-full:hover {
+  background-color: var(--color-medium);
+}
+
+.btn-outline {
+  margin-left: 3.2rem;
+  background-color: white;
+  border: 1px solid var(--color-dark);
+}
+
+.btn-outline:hover {
+  color: var(--color-dark);
+  border: 3px solid var(--color-dark);
+  padding: 1.4rem 2.6rem;
+}
+
+.btn-register {
+  background-color: var(--color-dark);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-register:hover {
+  border: 3px solid white;
+  padding: 0.9rem 2.1rem;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(100%, -100%);
+  height: 5.2rem;
+  width: 5.2rem;
+  font-size: 2.4rem;
+  color: white;
+  padding: 1.2rem;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+footer {
+  margin: 0 40px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/*//////////////////// */
+/* LOGIN */
+/*//////////////////// */
+
+.Login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40rem;
+  width: 80rem;
+  background-color: var(--color-dark);
+  transform: translate(-50%, -50%);
+
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  z-index: 1000;
+  gap: 0;
+}
+
+.welcome-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 4.8rem;
+}
+
+.welcome-column h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+.welcome-column p {
+  color: white;
+  line-height: 1.6;
+}
+
+.login-column {
+  height: 40rem;
+  padding: 4.8rem;
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.login-column label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: block;
+}
+
+.login-column h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.login-form {
+  display: block;
+}
+
+.email-login {
+  margin-bottom: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.hiden {
+  display: none;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
