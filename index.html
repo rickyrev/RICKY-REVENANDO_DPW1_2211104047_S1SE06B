@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contoh Internal CSS</title>
-<!-- penulisan internal css dalam tag head -->
-<style type="text/css">
-p{
-font-family: serif;
-line-height: 1.75em;
-font-size: 18px;
-}i
-{font-family: sans;
-color: orange;
-}
-</style>
+    <title>Total Harga Pembelian Barang</title>
 </head>
 <body>
-<!-- penulisan internal css dalam tag body -->
-<style type="text/css">
-h2 {
-font-family: sans;
-color: #333;
-}
-</style>
-<h2>Ini judul artikel</h2>
-<p>Ini adalah paragraf yang memuat isi artikel. Paragraf ini hanya untuk
-percobaan saja. Percobaan untuk mendemokan <i>internal css</i>. Seperti
-namanya, <i>inline CSS</i> adalah kode CSS yang ditulis langsung dalam
-file HTML.</p>
+    <h1>Pembelian Barang</h1>
+    <table border="1">
+        <tr>
+            <th>Nama Barang</th>
+            <th>Harga (Rp)</th>
+            <th>Jumlah</th>
+            <th>Total Harga (Rp)</th>
+        </tr>
+        <tr>
+            <td>Barang A</td>
+            <td id="hargaBarangA">10000</td>
+            <td id="jumlahBarangA">5</td>
+            <td id="totalHargaBarangA"></td>
+        </tr>
+        <tr>
+            <td>Barang B</td>
+            <td id="hargaBarangB">15000</td>
+            <td id="jumlahBarangB">3</td>
+            <td id="totalHargaBarangB"></td>
+        </tr>
+        <tr>
+            <td>Barang C</td>
+            <td id="hargaBarangC">20000</td>
+            <td id="jumlahBarangC">2</td>
+            <td id="totalHargaBarangC"></td>
+        </tr>
+        <tr>
+            <th colspan="3">Total</th>
+            <td id="totalHarga"></td>
+        </tr>
+    </table>
+
+    <button onclick="hitungTotalHarga()">Hitung Total Harga</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
