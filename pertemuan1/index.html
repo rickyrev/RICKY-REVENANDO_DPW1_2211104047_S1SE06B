@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contoh Internal CSS</title>
-<!-- penulisan internal css dalam tag head -->
-<style type="text/css">
-p{
-font-family: serif;
-line-height: 1.75em;
-font-size: 18px;
-}i
-{font-family: sans;
-color: orange;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>Login & Registration Form | coderGirl</title>-->
+    <!--Custom CSS File--->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
- 
+
+
+<align="center" width="200" height="100">
+
 <body>
-<!-- penulisan internal css dalam tag body -->
-<style type="text/css">
-h2 {
-font-family: sans;
-color: #12bee9cc;
-}
-</style>
-<h2>Ini judul artikel</h2>
-<p>Bacotttt. Paragraf ini hanya untuk
-percobaan saja. Percobaan untuk mendemokan <i>internal css</i>. Seperti
-namanya, <i>inline CSS</i> adalah kode CSS yang ditulis langsung dalam
-file HTML.</p>
+    <div class="container">
+        <img src="download.png" alt="Your logo or banner">
+        <input type="checkbox" id="check">
+        <div class="Login here">
+            <header>Form Login</header>
+            <form action="#">
+                <input type="text" placeholder="Masukan Email">
+                <input type="password" placeholder="Masukan password">
+                <a href="#">Lupa password?</a>
+                <input type="button" class="button" value="Login">
+            </form>
+        <div class="signup">
+            <span class="span">Belum punya Akun?
+            <label for="check">Daftar</label>
+            </span>
+        </div>
+</div>
+    <div class="Registration form">
+    <header>Form Registrasi</header>
+    <form action="#">
+        <input type="text" placeholder="Masukan Email">
+        <input type="password" placeholder="Masukan Password">
+        <input type="password" placeholder="Masukan ulang password Anda">
+        <input type="button" class="button" value="Daftar">
+    </form> 
+    <div class="signup">
+        <span class="signup">Sudah Mempunyai Akun?
+            <label for="check">Login</label>
+        </span>
+       </div>
+    </div>
+</div> 
+
 </body>
 </html>

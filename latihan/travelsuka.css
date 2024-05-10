@@ -1,0 +1,120 @@
+:root {
+  --color-lightest: #b5b2f8;
+  --color-light: #6a64f1;
+  --color-medium: #5f5ad9;
+  --color-dark: #4a46a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  color: #495057;
+  /* padding: 2rem; */
+  position: relative;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(Danau.webp);
+  background-size: cover;
+  object-fit: cover;
+  height: 50vw;
+  width: 100%;
+}
+.form-margin{
+  margin-bottom: 100px;
+}
+
+.nabvar-custom {
+  height: 50px;
+  padding: 30px;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.white-text {
+  color: white;
+}
+
+.menu-custom {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-link {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.menu-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.menu-custom li {
+  list-style: none;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+main {
+  background-color: white;
+  border-radius: 32px;
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+}
+
+.heading-tertiary {
+  margin-bottom: 50px;
+}
+
+.card {
+  transition: all 0.4s;
+  box-shadow: 6px 2px 17px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.advertising {
+  margin-top: 50px;
+}
+
+.carousel-item img {
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 50px;
+}
